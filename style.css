@@ -1,0 +1,113 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bbb4b4;
+    overscroll-behavior: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin: 0%;
+    margin-top: 20px;   
+}
+#guessInput {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    max-width: 700px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none; 
+    border-radius: 4px;
+    border-bottom: 2px;
+    box-shadow: 0 2px 0 0 #6c757d;
+    outline: none;
+    transition-duration :0.1s; 
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+#guessInput::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+#guessInput:focus {
+    box-shadow: 0 4px 0 0 #007BFF;
+    background-color: white;
+    transition-duration :0.1s; 
+}
+#guessInput:not(:focus):hover { 
+    box-shadow: 0 2px 0 0 #6c757d;
+    background-color: rgba(255, 255, 255, 0.75);
+    transition-duration :0.1s; 
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+}
+#resetBtn {
+    background-color: #6c757d;
+    transition-duration :0.4s; 
+    cursor: default;
+}
+#resetBtn:enabled {
+    background-color: #f11919;
+    transition-duration :0.4s;
+    cursor: pointer;
+}
+#resetBtn:enabled:hover {
+    background-color: #a90000;
+    transition-duration :0.4s;
+    cursor: pointer;
+}
+#guessBtn {
+    background-color: #6c757d;
+    transition-duration :0.4s; 
+    cursor: default;
+}
+#guessBtn:enabled {
+    background-color: #007BFF;
+    transition-duration :0.4s; 
+    cursor: pointer;
+}
+#guessBtn:enabled:hover {
+    background-color: #0052a9;
+    transition-duration :0.4s;
+    cursor: pointer;
+}
+.button-container {
+   display:flex; 
+   justify-content:center; 
+   gap:10px; 
+}
+.intro {
+    padding: 10px;
+    margin: 0%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: 90%;
+    max-width: 700px;
+}
+#message {
+    padding: 10px;
+    margin: 0%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    width: auto;
+    max-width: 700px;
+}

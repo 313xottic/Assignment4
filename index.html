@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess the Number</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Guess the Number</h1>
+            <p class="intro">In this number guessing game, a random number between 1 and 100 is generated at the start. You enter your guess in the provided field and click ‘Guess’. The game will hint if your guess is too high or too low. Keep guessing based on these hints until you find the correct number. The game keeps track of your guesses. If you guess correctly, you win and can play again by clicking ‘Reset’, which generates a new number.</p>
+            <p id="message">Please enter a number.</p>
+            <input type="number" id="guessInput" placeholder="Enter your guess">
+            <div class="button-container">
+                <button id="guessBtn">Guess</button>
+                <button id="resetBtn" disabled>Reset</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
